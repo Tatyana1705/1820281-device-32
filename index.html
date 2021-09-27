@@ -12,7 +12,8 @@
       <img class="header-logo__img" src="#" alt="логотип">
     </div>
     <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
-      <input class="search-form__input" type="text" name="search-input" placeholder="Поиск по сайту">
+      <label class="visually-hidden" for="search">Поиск</label>
+      <input class="search-form__input" id="search" type="text" name="search-input" placeholder="Поиск по сайту">
       <button class="search-form__btn" type="submit">Найти</button>
     </form>
     <ul class="nav-user">
@@ -69,7 +70,7 @@
     <h1 class="visually-hidden">Интернет-магазин «Девайс»</h1>
 
     <section class="product-slider">
-      <h2 class="visually-hidden">Популярыне товары</h2>
+      <h2 class="visually-hidden">Популярные товары</h2>
 
       <section class="slider-card">
         <h3 class="visually-hidden">Квадракоптер</h3>
@@ -186,37 +187,31 @@
       <ul class="assortiment__list">
         <li class="assortiment__item">
           <a class="assortiment__link" href="#">
-            <span class="assortiment__icon"></span>
             <p class="assortiment__text">Виртуальная реальность</p>
           </a>
         </li>
         <li class="assortiment__item">
           <a class="assortiment__link" href="#">
-            <span class="assortiment__icon"></span>
             <p class="assortiment__text">Моноподы для селфи</p>
           </a>
         </li>
         <li class="assortiment__item">
           <a class="assortiment__link" href="#">
-            <span class="assortiment__icon"></span>
             <p class="assortiment__text">Экшн-камеры</p>
           </a>
         </li>
         <li class="assortiment__item">
           <a class="assortiment__link" href="#">
-            <span class="assortiment__icon"></span>
             <p class="assortiment__text">Фитнес-браслеты</p>
           </a>
         </li>
         <li class="assortiment__item">
           <a class="assortiment__link" href="#">
-            <span class="assortiment__icon"></span>
             <p class="assortiment__text">Умные часы</p>
           </a>
         </li>
         <li class="assortiment__item">
           <a class="assortiment__link" href="#">
-            <span class="assortiment__icon"></span>
             <p class="assortiment__text">Квадрокоптеры</p>
           </a>
         </li>
@@ -299,7 +294,8 @@
       <p class="subscription__text">Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а
         также акции, спецпредложения и вот это вот всё.</p>
       <form class="subscription__form" action="https://echo.htmlacademy.ru/" method="post">
-        <input class="subscription__input" type="email" name="appointmet-email" placeholder="Ваш e-mail">
+        <label class="visually-hidden" for="email">Адрес электронной почты</label>
+        <input class="subscription__input" id="email" type="email" name="appointmet-email" placeholder="Ваш e-mail">
         <button class="subscription__btn" type="submit">Подписаться</button>
       </form>
       <span class="subscription__info">Это бесплатно</span>
@@ -348,7 +344,7 @@
     </ul>
 
     <a class="logo-academy" href="https://htmlacademy.ru/">
-      <span class="visually-hidden">Сделоно в html-academy</span>
+      <span class="visually-hidden">Сделано в html-academy</span>
     </a>
   </footer>
 
