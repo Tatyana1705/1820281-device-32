@@ -8,7 +8,7 @@
 </head>
 
 <body>
-  <header class="page-header page-container">
+  <header class="page-header page-header_main page-container">
     <div class="header-logo">
       <img class="header-logo__img" src="images/icon/logo.svg" width="145" height="36" alt="Device">
     </div>
@@ -23,7 +23,7 @@
         <li class="nav-user__item">
           <a class="nav-user__link" href="#">Войти</a>
         </li>
-        <li class="nav-user__item">
+        <li class="nav-user__item nav-user__item_compare">
           <a class="nav-user__link" href="#">Сравнить</a>
         </li>
         <li class="nav-user__item">
@@ -37,7 +37,7 @@
     <nav class="main-nav">
       <ul class="main-nav__list">
         <li class="main-nav__item main-nav__item_catalog">
-          <a class="main-nav__link" href="#">Каталог товаров</a>
+          <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
           <ul class="sub-nav">
             <li class="sub-nav__item">
               <a class="sub-nav__link" href="#">Виртуальная реальность</a>
@@ -101,10 +101,14 @@
           <a class="slider-card__link btn" href="#">Подробнее</a>
 
           <dl class="slider-card__feature">
-            <dt>800 м</dt>
-            <dd>Дальность полета</dd>
-            <dt>50 м</dt>
-            <dd>Радиус поражения</dd>
+            <div class="slider-card__feature-item">
+              <dt>800 м</dt>
+              <dd>Дальность полета</dd>
+            </div>
+            <div class="slider-card__feature-item">
+              <dt>50 м</dt>
+              <dd>Радиус поражения</dd>
+            </div>
           </dl>
         </div>
       </section>
@@ -130,8 +134,10 @@
           <a class="slider-card__link btn" href="#">Подробнее</a>
 
           <dl class="slider-card__feature">
-            <dt>48 часов</dt>
-            <dd>Без подзарядки</dd>
+            <div class="slider-card__feature-item">
+              <dt>48 часов</dt>
+              <dd>Без подзарядки</dd>
+            </div>
           </dl>
         </div>
       </section>
@@ -158,12 +164,18 @@
           <a class="slider-card__link btn" href="#">Подробнее</a>
 
           <dl class="slider-card__feature">
-            <dt>8,5 м</dt>
-            <dd>Длина палки</dd>
-            <dt>5 кг</dt>
-            <dd>Вес палки</dd>
-            <dt>Карбон</dt>
-            <dd>Материал</dd>
+            <div class="slider-card__feature-item">
+              <dt>8,5 м</dt>
+              <dd>Длина палки</dd>
+            </div>
+            <div class="slider-card__feature-item">
+              <dt>5 кг</dt>
+              <dd>Вес палки</dd>
+            </div>
+            <div class="slider-card__feature-item">
+              <dt>Карбон</dt>
+              <dd>Материал</dd>
+            </div>
           </dl>
         </div>
       </section>
@@ -290,8 +302,8 @@
           работоспособность покупки.</p>
         <h3 class="contacts__subtitle">Интернет-магазин «Девайс»</h3>
         <address class="contacts__address">
-          <p class="contacts__text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-          <a class="contacts__phone" href="tel:88128121212">+7 (812) 812-12-12</a>
+          <p class="contacts__address_text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+          <a class="contacts__address_phone" href="tel:88128121212">+7 (812) 812-12-12</a>
         </address>
         <h3 class="contacts__subtitle">Время работы</h3>
         <ul class="contacts__schedule">
@@ -310,12 +322,12 @@
           также акции, спецпредложения и вот это вот всё.</p>
       </div>
       <div class="subscription__container page-container">
-        <form class="subscription__form" action="https://echo.htmlacademy.ru/" method="post">
-          <label class="visually-hidden" for="email">Адрес электронной почты</label>
-          <input class="subscription__input" id="email" type="email" name="appointmet-email" placeholder="Ваш e-mail">
-          <button class="subscription__btn btn" type="submit">Подписаться</button>
-        </form>
-        <span class="subscription__info">Это бесплатно</span>
+      <form class="subscription__form" action="https://echo.htmlacademy.ru/" method="post">
+        <label class="visually-hidden" for="email">Адрес электронной почты</label>
+        <input class="subscription__input" id="email" type="email" name="appointmet-email" placeholder="Ваш e-mail">
+        <button class="subscription__btn btn" type="submit">Подписаться</button>
+      </form>
+      <span class="subscription__info">Это бесплатно</span>
       </div>
     </section>
   </main>
@@ -330,7 +342,7 @@
         <address class="footer-address">
           <p class="footer-address__text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
         </address>
-        <a class="footer-contacts-phone" href="tel:88128121212">+7 (812) 812-12-12</a>
+        <a class="footer-contacts-phone" href="tel:88128121212">Тел.: +7 (812) 812-12-12</a>
         <nav class="footer-nav">
           <ul class="footer-nav__list">
             <li class="footer-nav__item">
