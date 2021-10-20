@@ -26,10 +26,36 @@
         <li class="nav-user__item nav-user__item_compare">
           <a class="nav-user__link" href="#">Сравнить</a>
         </li>
-        <li class="nav-user__item">
+        <li class="nav-user__item nav-user__item_basket">
           <span class="visually-hidden">Товаров в корзине:</span>
           <span class="nav-user__basket-count">2</span>
           <a class="nav-user__link" href="#">Корзина</a>
+
+          <section class="popup-basket popup-basket_disabled">
+            <h2 class="visually-hidden">Товары в корзине</h2>
+            <ul class="popup-basket__list">
+              <li class="popup-basket__item">
+                <img class="popup-basket__img" src="images/products/product-1.jpg" width="41" height="43">
+                <p class="popup-basket__text">Любительская селфи-палка</p>
+                <button class="popup-basket__item_btn" type="submit">
+                  <span class="visually-hidden">Удалить</span>
+                </button>
+              </li>
+              <li class="popup-basket__item">
+                <img class="popup-basket__img" src="images/products/product-2.jpg" width="41" height="43">
+                <p class="popup-basket__text">Профессиональная селфи-палка</p>
+                <button class="popup-basket__item_btn" type="submit">
+                  <span class="visually-hidden">Удалить</span>
+                </button>
+              </li>
+            </ul>
+            <div class="popup-basket__result">
+              <p class="popup-basket__count">Товаров: 2</p>
+              <p class="popup-basket__sum">Сумма: 2000 ₽</p>
+            </div>
+            <a class="popup-basket__btn" href="#">Открыть корзину</a>
+          </section>
+
         </li>
       </ul>
     </div>
@@ -38,26 +64,32 @@
       <ul class="main-nav__list">
         <li class="main-nav__item main-nav__item_catalog">
           <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
-          <ul class="sub-nav">
-            <li class="sub-nav__item">
-              <a class="sub-nav__link" href="#">Виртуальная реальность</a>
-            </li>
-            <li class="sub-nav__item">
-              <a class="sub-nav__link" href="#">Моноподы для cелфи</a>
-            </li>
-            <li class="sub-nav__item">
-              <a class="sub-nav__link" href="#">Экшн-камеры</a>
-            </li>
-            <li class="sub-nav__item">
-              <a class="sub-nav__link" href="#">Фитнес-браслеты</a>
-            </li>
-            <li class="sub-nav__item">
-              <a class="sub-nav__link" href="#">Умные часы</a>
-            </li>
-            <li class="sub-nav__item">
-              <a class="sub-nav__link" href="#">Квадрокоптеры</a>
-            </li>
-          </ul>
+          <div class="sub-nav sub-nav_disabled">
+            <ul class="sub-nav__list">
+              <li class="sub-nav__item">
+                <a class="sub-nav__link" href="#">Виртуальная реальность</a>
+              </li>
+              <li class="sub-nav__item">
+                <a class="sub-nav__link" href="#">Моноподы для cелфи</a>
+              </li>
+              <li class="sub-nav__item">
+                <a class="sub-nav__link" href="#">Экшн-камеры</a>
+              </li>
+            </ul>
+            <ul class="sub-nav__list">
+              <li class="sub-nav__item">
+                <a class="sub-nav__link" href="#">Фитнес-браслеты</a>
+              </li>
+              <li class="sub-nav__item">
+                <a class="sub-nav__link" href="#">Умные часы</a>
+              </li>
+            </ul>
+            <ul class="sub-nav__list">
+              <li class="sub-nav__item">
+                <a class="sub-nav__link" href="#">Квадрокоптеры</a>
+              </li>
+            </ul>
+          </div>
         </li>
         <li class="main-nav__item">
           <a class="main-nav__link" href="#">Доставка</a>
@@ -383,6 +415,57 @@
       </div>
     </div>
   </footer>
+
+  <div class="modal-wrapper modal-wrapper_disabled">
+    <section class="modal-window">
+      <h2 class="modal-window__title">Доставка под заказ</h2>
+      <form class="delivery-form" action="#" method="post">
+
+        <ul class="delivery-form__list">
+          <li class="delivery-form__item delivery-form__item_name form-input form-input_err">
+            <label class="form-input__label" for="name">Ваше имя:</label>
+            <div class="form-input__wrapper">
+              <input class="form-input__input" type="text" id="name" name="name" placeholder="Имя Фамилия">
+            </div>
+            <span class="form-input__sign">Пожалуйста, представьтесь</span>
+          </li>
+          <li class="delivery-form__item delivery-form__item_email form-input">
+            <label class="form-input__label" for="e-mail">Ваш e-mail:</label>
+            <div class="form-input__wrapper">
+              <input class="form-input__input" type="text" id="e-mail" name="e-mail" placeholder="Ваш e-mail">
+            </div>
+            <span class="form-input__sign">Забавный у вас адрес</span>
+          </li>
+          <li class="delivery-form__item delivery-form__item_product form-input">
+            <label class="form-input__label" for="product-name">Что нужно привезти:</label>
+            <input class="form-input__input" type="text" id="product-name" name="product-name" placeholder="В свободной форме">
+          </li>
+          <li class="delivery-form__item delivery-form__item_counter form-counter">
+            <div class="form-counter__title">
+              <label class="form-counter__label" for="count">Количество:</label>
+              <button class="form-counter__info">
+                <span class="visually-hidden">Информация</span>
+              </button>
+            </div>
+            <div class="form-counter__group">
+              <button class="form-counter__btn form-counter__btn_minus">
+                <span class="visually-hidden">Минус</span>
+              </button>
+              <input class="form-counter__input" type="number" id="count" name="count" value="1">
+              <button class="form-counter__btn form-counter__btn_plus">
+                <span class="visually-hidden">Плюс</span>
+              </button>
+            </div>
+          </li> 
+        </ul>
+        <button class="delivery-form__btn btn" type="submit">Отправить</button>
+        <button class="delivery-form__close" type="submit">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+
+      </form>
+    </section>
+  </div>
 
 </body>
 

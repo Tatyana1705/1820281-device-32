@@ -40,26 +40,32 @@
       <ul class="main-nav__list">
         <li class="main-nav__item main-nav__item_catalog">
           <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
-          <ul class="sub-nav">
-            <li class="sub-nav__item">
-              <a class="sub-nav__link" href="#">Виртуальная реальность</a>
-            </li>
-            <li class="sub-nav__item">
-              <a class="sub-nav__link" href="#">Моноподы для cелфи</a>
-            </li>
-            <li class="sub-nav__item">
-              <a class="sub-nav__link" href="#">Экшн-камеры</a>
-            </li>
-            <li class="sub-nav__item">
-              <a class="sub-nav__link" href="#">Фитнес-браслеты</a>
-            </li>
-            <li class="sub-nav__item">
-              <a class="sub-nav__link" href="#">Умные часы</a>
-            </li>
-            <li class="sub-nav__item">
-              <a class="sub-nav__link" href="#">Квадрокоптеры</a>
-            </li>
-          </ul>
+          <div class="sub-nav sub-nav_disabled">
+            <ul class="sub-nav__list">
+              <li class="sub-nav__item">
+                <a class="sub-nav__link" href="#">Виртуальная реальность</a>
+              </li>
+              <li class="sub-nav__item">
+                <a class="sub-nav__link" href="#">Моноподы для cелфи</a>
+              </li>
+              <li class="sub-nav__item">
+                <a class="sub-nav__link" href="#">Экшн-камеры</a>
+              </li>
+            </ul>
+            <ul class="sub-nav__list">
+              <li class="sub-nav__item">
+                <a class="sub-nav__link" href="#">Фитнес-браслеты</a>
+              </li>
+              <li class="sub-nav__item">
+                <a class="sub-nav__link" href="#">Умные часы</a>
+              </li>
+            </ul>
+            <ul class="sub-nav__list">
+              <li class="sub-nav__item">
+                <a class="sub-nav__link" href="#">Квадрокоптеры</a>
+              </li>
+            </ul>
+          </div>
         </li>
         <li class="main-nav__item">
           <a class="main-nav__link" href="#">Доставка</a>
@@ -211,9 +217,10 @@
                       alt="Любительская селфи-палка">
                     <span class="product-card__btn btn">Подробнее</span>
                   </div>
-
-                  <h3 class="product-card__title">Любительская селфи-палка</h3>
-                  <b class="product-card__price">500 ₽</b>
+                  <div class="product-card__info">
+                    <h3 class="product-card__title">Любительская селфи-палка</h3>
+                    <b class="product-card__price">500 ₽</b>
+                  </div>
                 </a>
               </li>
 
@@ -224,9 +231,10 @@
                       alt="Профессиональная селфи-палка">
                     <span class="product-card__btn btn">Подробнее</span>
                   </div>
-
-                  <h3 class="product-card__title">Профессиональная селфи-палка</h3>
-                  <b class="product-card__price">1 500 ₽</b>
+                  <div class="product-card__info">
+                    <h3 class="product-card__title">Профессиональная селфи-палка</h3>
+                    <b class="product-card__price">1 500 ₽</b>
+                  </div>
                 </a>
               </li>
 
@@ -237,22 +245,24 @@
                       alt="Непотопляемая селфи-палка">
                     <span class="product-card__btn btn">Подробнее</span>
                   </div>
-
-                  <h3 class="product-card__title">Непотопляемая селфи-палка</h3>
-                  <b class="product-card__price">2 500 ₽</b>
+                  <div class="product-card__info">
+                    <h3 class="product-card__title">Непотопляемая селфи-палка</h3>
+                    <b class="product-card__price">2 500 ₽</b>
+                  </div>
                 </a>
               </li>
 
               <li class="products__item">
-                <a class="product-card" href="#">
+                <a class="product-card product-card_new" href="#">
                   <div class="product-card__picture">
-                    <img class="product-card__img new" src="images/products/product-4.jpg" width="360" height="380"
+                    <img class="product-card__img" src="images/products/product-4.jpg" width="360" height="380"
                       alt="Селфи-палка «Следуй за мной»">
                     <span class="product-card__btn btn">Подробнее</span>
                   </div>
-
-                  <h3 class="product-card__title">Селфи-палка «Следуй за мной»</h3>
-                  <b class="product-card__price">4 900 ₽</b>
+                  <div class="product-card__info">
+                    <h3 class="product-card__title">Селфи-палка «Следуй за&nbsp;мной»</h3>
+                    <b class="product-card__price">4 900 ₽</b>
+                  </div>
                 </a>
               </li>
             </ul>
