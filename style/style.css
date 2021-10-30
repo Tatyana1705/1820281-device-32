@@ -2561,7 +2561,7 @@ a.breadcrumbs__link:active::before {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0;
+    margin: 0 0 0 65px;
     padding: 0; 
 }
 
@@ -2683,7 +2683,7 @@ a.pagination__link:active {
 .delivery-form__item_email .form-input__wrapper::before {
     width: 15px;
     height: 12px;
-    background-image: url(../images/modal_window/mail_1.svg);
+    background-image: url(../images/modal_window/mail-1.svg);
 }
 
 .delivery-form__item_product {
